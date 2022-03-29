@@ -1,0 +1,198 @@
+
+/*------------------------Обнуление------------------------------*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*----------------------------------------------------------------*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 144px;
+}
+
+@media (max-width: $laptop) {
+    .container {
+        max-width: 1000px;
+        padding: 0px 70px;
+    }
+}
+
+@media (max-width: $laptop-m) {
+    .container {
+        max-width: 1000px;
+        padding: 0px 50px;
+    }
+}
+
+@media (max-width: $mobile-l) {
+    .container {
+        max-width: 400px;
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: $mobile-s) {
+    .container {
+        max-width: 320px;
+        padding: 0px 20px;
+    }
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
+//Блокировка прокрутки страницы при открытом меню
+.lock {
+    overflow: hidden;
+}
+
+.button {
+    background: #066F14;
+    border-radius: 4px;
+    font-family: "DMSans", "Arial", sans-serif;
+    font-weight: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    padding: 16px 32px;
+
+    &:focus {
+        text-decoration: underline;
+        color: #f8e009;
+    }
+
+    &:hover {
+        background: #5E2129;
+        box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+        transition: 0.3s;
+        color: #c6c8ca;
+    }
+
+    &:active {
+        background: #1A1A1A;
+    }
+}
+
+.title {
+    font-family: "NunitoSans", "Aril", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #1A1A1A;
+}
+
+@media (max-width: $tablet) {
+    .title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+@media (max-width: $mobile-l) {
+    .title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+.text {
+    font-family: "DM Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #4A4A4A;
+}
+
+@media (max-width: $tablet) {
+    .text {
+        font-size: 14px;
+    }
+}
+
+.uptitle {
+    font-family: "DM Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #066F14;
+}
+
+@media (max-width: $tablet) {
+    .uptitle {
+        font-size: 16px;
+    }
+}
+
+.text-strong {
+    font-family: "DM Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4A4A4A;
+}
+
+@media (max-width: $tablet) {
+    .text-strong {
+        font-size: 16px;
+    }
+}
