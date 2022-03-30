@@ -1,4 +1,7 @@
 import * as flsFunctions from "./modules/functions.js";
+import $ from "jquery";
+import "slick-carousel";
+
 
 flsFunctions.isWebp();
 
@@ -114,11 +117,9 @@ linkSale.addEventListener('click', function () {
 });
 
 //Слайдер отзывов
-$(document).ready(function(){
     $('.slider').slick({
-        arrow: true,
-        dots: false,
-        prevArrow: '<button type="button" class="arrow-block__arrow arrow-prew"></button>',
-        nextArrow: '<button type="button" class="arrow-block__arrow arrow-next"></button>'
-    });
+    arrow: true,
+    dots: false,
+    prevArrow: '<button type="button" class="arrow-block__arrow arrow-prew"></button>',
+    nextArrow: '<button type="button" class="arrow-block__arrow arrow-next"></button>'
 });
