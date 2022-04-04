@@ -1,0 +1,219 @@
+.product {
+    &__title {
+        text-align: center;
+        margin-top: 128px;
+        font-size: 40px;
+        line-height: 125%;
+    }
+
+    &__link-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 25px 0px 48px 0px;
+    }
+
+    &__link-button {
+        margin: 0px 24px 0px 0px;
+        font-family: "DM Sans", "Arial", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #4A4A4A;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:focus {
+            border-bottom: 1px solid #1A1A1A;
+        }
+    }
+
+    &__link-item-selected {
+        font-size: 18px;
+        line-height: 23px;
+        color: #066F14;
+    }
+
+    &__list-plants {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__item {
+        min-width: 270px;
+        min-height: 283px;
+        background-color: #e5e5e5;
+        padding: 0px 31px 29px;
+        margin: 0px 0px 20px 0px;
+
+        &:first-child {
+            padding-top: 10px;
+        }
+
+        &:nth-child(2n) {
+            padding-top: 4px;
+        }
+
+        &:nth-child(3n) {
+            padding-top: 7px;
+        }
+
+    }
+
+    &__item-color-linen {
+        background-color: #EAF2E5;
+    }
+
+    &__img {
+        width: auto;
+        height: 153px;
+        display: block;
+    }
+
+    &__item-color-apricot {
+        background-color: #F0EBE6;
+    }
+
+    &__item-color-platinum {
+        background-color: #E2ECE4;
+    }
+
+    &__item-color-lavender {
+        background-color: #E7EEED;
+    }
+
+    &__arrivals {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__sale {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__button-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0px 0px 0px;
+    }
+
+    &__link {
+        display: block;
+        max-width: 131px;
+    }
+}
+
+.list-plants {
+    &__item {
+        display: none;
+    }
+}
+
+.img-block {
+    display: flex;
+    justify-content: center;
+}
+
+.card-title {
+    font-family: "NunitoSans", "Aril", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 117%;
+    color: #1A1A1A;
+    margin-top: 6px;
+}
+
+.star-block {
+    margin: 10px 0px 12px 0px;
+}
+
+.prise {
+    font-family: "NunitoSans", "Aril", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1A1A1A;
+}
+
+.arriwals {
+    &__item {
+        position: relative;
+        display: none;
+
+        &::before {
+            content: 'New';
+            top: 12px;
+            left: -5px;
+            position: absolute;
+            background-color: #1A1A1A;
+            color: #e5e5e5;
+            width: 50px;
+            min-height: 25px;
+            text-transform: uppercase;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            box-shadow:0 0 0 3px #c0cebe,  0px 21px 5px -18px rgba(0,0,0,0.6);
+        }
+    }
+}
+
+.sale {
+    &__item {
+        position: relative;
+        display: none;
+
+        &::before {
+            content: 'Sale';
+            top: 12px;
+            left: -5px;
+            position: absolute;
+            background-color: #FF0000;
+            color: #e5e5e5;
+            width: 50px;
+            min-height: 25px;
+            text-transform: uppercase;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            box-shadow:0 0 0 3px #c0cebe,  0px 21px 5px -18px rgba(0,0,0,0.6);
+        }
+    }
+
+    &__prise {
+        font-size: 18px;
+        color: #FF0000;
+    }
+}
+
+.product-active {
+    display: block;
+}
+
+@media (max-width: $laptop-m) {
+    .product {
+        &__title {
+            margin-top: 80px;
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .product {
+        &__title {
+            margin-top: 40px;
+        }
+    }
+}
