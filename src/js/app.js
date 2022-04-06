@@ -8,9 +8,9 @@ flsFunctions.isWebp();
 
 //Открытие и закрытие кнопки меню,блокировка скрола содержимого
 const burger = document.querySelector('.header__burger');
+const nav = document.querySelector('.header__nav-block');
 
 document.querySelector('.header__burger').addEventListener('click', function() {
-    document.querySelector('.header__nav-block').classList.toggle('nav-block__open');
     document.querySelector('.body').classList.toggle('lock');
     if (burger.classList.contains('header__burger')) {
         burger.classList.remove('header__burger');
@@ -21,6 +21,15 @@ document.querySelector('.header__burger').addEventListener('click', function() {
     }
 });
 
+document.querySelector('.header__burger').addEventListener('click', function() {
+    if (nav.classList.contains('header__nav-block')) {
+        nav.classList.remove('header__nav-block');
+        nav.classList.add('nav-block__open');
+    } else {
+        nav.classList.remove('nav-block__open');
+        nav.classList.add('header__nav-block');
+    }
+});
 
 
 //Блок Product выбор меню расстений
